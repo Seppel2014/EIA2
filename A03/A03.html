@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trankrezeptgeneratording</title>
+    <script src="A03.js"></script>
+    <link rel="stylesheet" href="A03.css">
+</head>
+<body>
+
+<form>
+    <div id="form">
+    <fieldset id="potionInfoFieldset">
+        <legend>Grundlegende Informationen</legend>
+        
+        <label for ="potionName">Benenne deinen Trank</label><br>
+        <input type ="text" id="potionName" name="potionName" value="" required/>
+        <br>
+        <label for ="potionDescription">Beschreibe deinen Trank</label><br>
+        <textarea id ="potionDescription" name="description" value="" rows="2" cols="50" maxlength="100"></textarea>
+        <br>
+        <label for ="potionEffects">Welche Wirkung hat dein Trank ?</label><br>
+        <input name="effects" list ="potionEffects">
+            <datalist id="potionEffects">
+                <option value="Liebestrank"></option>
+                <option value="Stärketrank"></option>
+                <option value="Schönheitstrank"></option>
+                <option value="Katertrank"></option>
+            </datalist>
+        <br>
+        <!--<label for ="potionDuration">Wie lange soll dein Trank anhalten, aktuell hält die Dauer für <a id="potionDurationOutput">60</a> Minuten an</label><br>
+        <input type="range" min="1" max="60" step="1" value="30" class="slider" id="potionDurationSlider">
+        <progress max="60" value="1"></progress>-->
+        <br>
+        <div>
+            <label for="potionBottle">In was für einem Fläschchen befindet sich der Trank ?</label><br>
+                <ul name="bottle" id="potionBottle">
+                    <li><input type="radio" id="potionBottleRadio1" name="bottle" value="rundesFläschchen" price="5">
+                    <label for="potionBottleRadio1">Rundes Fläschchen</label></li>
+                    <li><input type="radio" id="potionBottleRadio2" name="bottle" value="eckigesFläschchen" price="4">
+                    <label for="potionBottleRadio2">eckiges Fläschchen</label></li>
+                    <li><input type="radio" id="potionBottleRadio3" name="bottle" value="tropfenderBeutel" price="0.5">
+                    <label for="potionBottleRadio3">tropfender Beutel</label></li>
+                </ul>
+    </fieldset>
+
+    <fieldset id="PotionIngredientsFieldset">
+        <legend>Zutaten</legend>
+            <div id="ingredient1Div">
+                <input type="checkbox" name="Hexennase" id="ingredient1" value="true" price="1">
+                <label for="ingredient1">Hexennase</label>
+                <input id="ingredient1Ammount" type="number" name="Mausschwanz" step="1" min="1" max="10" value="1">Nasen
+            </div>
+            <div id="ingredient2Div">
+                <input type="checkbox" name="Katzenpfote" id="ingredient1" value="true" price="1">
+                <label for="ingredient1">Katzenpfote</label>
+                <input id="ingredient1Ammount" type="number" name="Katzenpfote" step="1" min="1" max="10" value="1">Pfoten
+            </div>
+            <div id="ingredient3Div">
+                <input type="checkbox" name="Mäusepups" id="ingredient3" value="true" price="1">
+                <label for="ingredient3">Mäusepups</label>
+                <input id="ingredient3Ammount" type="number" name="Mäusepups" step="1" min="1" max="10" value="1">Pupse
+            </div>
+            <div id="ingredient4Div">
+                <input type="checkbox" name="Kraut" id="ingredient4" value="true" price="1">
+                <label for="ingredient4">Kraut</label>
+                <input id="ingredient4Ammount" type="number" name="Kraut" step="1" min="1" max="10" value="1">Büschel
+            </div>
+            <div id="ingredient5Div">
+                <input type="checkbox" name="Regenwürmer" id="ingredient5" value="true" price="1">
+                <label for="ingredient5">Regenwürmer</label>
+                <input id="ingredient5Ammount" type="number" name="Regenwürmer" step="1" min="1" max="10" value="1">Würmer
+            </div>
+    </fieldset>
+
+    <fieldset id="potionInstructionsFieldset">
+        <legend>Anweisungen</legend>
+            <label for="potionInstructions">Wie stark muss gerührt werden? </label>
+            <br>
+            <select name="strength" id="potionInstructions" name="potionInstructions">
+                <option value="leicht">leicht</option>
+                <option value="mittel">mittel</option>
+                <option value="stark">stark</option>
+            </select>
+            <br>
+
+        <div>
+            <label for="potionHeat">Wie hoch erhitzt oder gekühlt muss der Trank werden ?</label>
+            <br>
+            <input id="potionHeat" type="number" name="potionHeat" step="1" min="-100" max="150" value="20">        
+        </div>
+    </fieldset>
+
+    <fieldset id="potionRequirementsFieldset">
+        <legend>Abschlussbedingungen</legend>
+        <div>
+            <label for="potionColor">Welche Farbe hat dein Trank ?</label>
+            <br>
+            <input type="color" id="potionColor" name="potionColor" value="#15B4EE">
+        </div>
+        
+        <label for="potionConsistence">Welche Konsistenz muss der Trank haben ?</label>
+            <br>
+            <select id="potionConsistence" name="potionConsistence">
+                <option value="flüssig">flüssig</option>
+                <option value="gasförmig">gasförmig</option>
+                <option value="fest">fest</option>
+            </select>
+            <br>
+            <br>
+        <button id="createPotionButton">Stelle das Rezept fertig !</button>
+    </fieldset>
+    </div>
+</form>
+
+<div id="output">
+</div>
+
+</body>
+</html>
