@@ -1,0 +1,65 @@
+html {
+background-color: lightgrey;
+color: greenyellow;
+}
+
+form {
+width: 60%;
+height: 70%;
+position: absolute;
+top: 1%;
+}
+
+#output {
+width:20%;
+height: 70%;
+position: absolute;
+left: 65%;
+top: 2.5%;
+background-color: green;
+}
+
+#total {
+width: 90%;
+height: 90%;
+position: absolute;
+left: 5%;
+top: 2%;
+}
+
+textarea {
+resize: none;
+}
+
+input {
+height: 20px;
+background-color: black;
+}
+
+.slider {
+-webkit-appearance: none; 
+width: 20%; 
+height: 25px; 
+background-color: black;
+border-radius: 10px ;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none; 
+appearance: none;
+width: 25px; 
+height: 25px;
+background: lightgreen; 
+cursor: pointer; 
+}
+
+button {
+background-color: black;
+color: greenyellow;
+}
+
+input, textarea, #potionName{
+background-color: black;
+color: greenyellow;
+border-radius: 10px;
+}
