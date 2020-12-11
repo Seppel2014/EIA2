@@ -1,0 +1,120 @@
+html {
+    background-color: white; /* forced dark mode deaktiviert weißen hintergrund, vor präsentation zu weiß ändern */
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:link, a:visited {
+color: grey;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover {
+color: black ;
+}
+
+h2 {
+font-size: 30px;
+}
+
+#containerTopNavigation {
+position: absolute;
+left: 2%;
+width: 96%;
+height: 10%;
+border: 1px;
+border: solid;
+border-radius: 25px;
+}
+
+#linkOne, #linkTwo, #linkThree, #linkFour, #linkFive {
+text-align: center;
+width: 12%;
+height: 60%;
+position: absolute;
+border-radius: 25px;
+border: solid;
+}
+
+#containerTopNavigation #linkOne {
+top: 14%;
+left: 3%;
+width: 5%;
+}
+
+#containerTopNavigation #linkFive {
+top: 14%;
+right: 3%;
+width: 5%;
+}
+
+#containerTopNavigation #linkTwo {
+top: 14%;
+left: 20%;
+}
+
+#containerTopNavigation #linkThree {
+top: 14%;
+left: 44%;
+}
+
+#containerTopNavigation #linkFour {
+top: 14%;
+right: 20%;
+}
+
+#containerLeftNavigation {
+position: absolute;
+top: 14%;
+width: 20%;
+height: 80%;
+border: 1px;
+border: solid;
+border-radius: 25px;
+left: 2%;
+}
+
+#containerLeftNavigation a {
+font-size: 30px;
+margin: 5%;
+}
+
+#containerLeftNavigation a:hover {
+transform: scale(1.1);
+}
+
+#listLeftNavigation {
+list-style: none;
+}
+
+#containerRightContent {
+position: absolute;
+top: 14%;
+width: 74%;
+height: 80%;
+border: 1px;
+border: solid;
+border-radius: 25px;
+left: 24%;
+}
+
+#containerLogin {
+position: absolute;
+top: 40%;
+left: 45%;
+width: 10%;
+height: 15%;
+border: 1px;
+border: solid;
+border-radius: 25px;
+padding: 20px;
+}
+
+#MyBuddyTest {
+position: absolute;
+left: 15%;
+top: 5%;
+border: 1px;
+border: solid;
+}
