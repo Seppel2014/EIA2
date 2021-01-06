@@ -1,0 +1,14 @@
+html {
+    background-color: white; /* forced dark mode deaktiviert weißen hintergrund, vor präsentation zu weiß ändern */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+#MyBuddyTest {
+position: absolute;
+left: 5%;
+top: 5%;
+border: 1px;
+border: solid;
+}
