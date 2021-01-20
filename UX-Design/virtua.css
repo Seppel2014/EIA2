@@ -8,7 +8,6 @@ html {
 a:link, a:visited {
 color: grey;
 text-decoration: none;
-display: inline-block;
 }
 
 a:hover, #linkFive:hover, #linkOne:hover {
@@ -35,7 +34,31 @@ height: 10%;
 border: 1px;
 border-radius: 25px;
 background-color: white;
-opacity: 80%;
+opacity: 95%;
+}
+
+#containerLeftContent{
+position: absolute;
+top: 14%;
+width: 70%;
+height: 80%;
+border: 1px;
+border-radius: 25px;
+left: 2%;
+background-color: white;
+opacity: 95%;
+}
+
+#containerRightContent {
+position: absolute;
+top: 14%;
+width: 24%;
+height: 80%;
+border: 1px;
+border-radius: 25px;
+right: 2%;
+background-color: white;
+opacity: 90%;
 }
 
 #linkOne, #linkTwo, #linkThree, #linkFour, #linkFive {
@@ -50,14 +73,14 @@ border-radius: 25px;
 top: 27%;
 left: 3%;
 width: 5%;
-opacity: 80%;
+opacity: 90%;
 }
 
 #linkFive {
 top: 27%;
 right: 3%;
 width: 5%;
-opacity: 80%;
+opacity: 90%;
 }
 
 #linkTwo {
@@ -75,18 +98,6 @@ top: 14%;
 right: 20%;
 }
 
-#containerLeftNavigation {
-position: absolute;
-top: 14%;
-width: 20%;
-height: 80%;
-border: 1px;
-border-radius: 25px;
-left: 2%;
-background-color: white;
-opacity: 80%;
-}
-
 #containerLeftNavigation a {
 font-size: 30px;
 margin: 5%;
@@ -96,34 +107,143 @@ margin: 5%;
 list-style: none;
 }
 
-#containerRightContent {
-position: absolute;
-top: 14%;
-width: 74%;
-height: 80%;
-border: 1px;
-border-radius: 25px;
-left: 24%;
-background-color: white;
-opacity: 80%;
-}
-
-#containerLogin {
-position: absolute;
-top: 40%;
-left: 45%;
-width: 10%;
-height: 15%;
-border: 1px;
-border-radius: 25px;
-padding: 20px;
-background-color: white;
-opacity: 80%;
-}
-
 #MyBuddyTest {
 position: absolute;
 left: 15%;
 top: 5%;
 border: solid;
 }
+
+img {
+width: 70%;
+height: 80%;
+}
+
+#suggestion1 {
+position: absolute;
+top: 5%;
+left: 17%;
+width: 90%;
+height: 25%;
+}
+
+#suggestion1img {
+position: absolute;
+top: 9%;
+left: 1%;
+width: 19%;
+height: 100%;
+opacity: 90%;
+}
+
+#suggestion1map {
+position: absolute;
+top: 2%;
+left: 45%;
+width: 35%;
+height: 120%;
+opacity: 90%;
+}
+
+#suggestion2 {
+position: absolute;
+top: 37.5%;
+left: 17%;
+width: 90%;
+height: 25%;
+}
+
+#suggestion2img {
+position: absolute;
+top: 9%;
+left: 1%;
+width: 19%;
+height: 100%;
+opacity: 90%;
+}
+
+#suggestion2map {
+position: absolute;
+top: 2%;
+left: 45%;
+width: 35%;
+height: 120%;
+opacity: 90%;
+}
+
+#suggestion3 {
+position: absolute;
+bottom: 5%;
+left: 17%;
+width: 90%;
+height: 25%;
+}
+
+#suggestion3img {
+position: absolute;
+top: 9%;
+left: 1%;
+width: 19%;
+height: 100%;
+opacity: 90%;
+}
+
+#suggestion3map {
+position: absolute;
+top: 2%;
+left: 45%;
+width: 35%;
+height: 120%;
+opacity: 90%;
+}
+
+.suggestionIcons {
+width: 40%;
+height: 98%;
+position: absolute;
+left: 10%;
+top: 4%;
+}
+
+.suggestionIcon1:hover, .suggestionIcon2:hover, .suggestionIcon3:hover, .suggestionIcon4:hover, #suggestion1img:hover,
+ #suggestion2img:hover, #suggestion3img:hover, #suggestion1map:hover, #suggestion2map:hover, #suggestion3map:hover {
+opacity: 100%;
+}
+
+.suggestionIcon1 {
+width: 15%;
+height: 35%;
+position: absolute;
+left: 40%;
+top: 1%;
+opacity: 90%;
+}
+
+.suggestionIcon2 {
+width: 15%;
+height: 35%;
+position: absolute;
+left: 55%;
+top: 30%;
+opacity: 90%;
+}
+
+.suggestionIcon3 {
+width: 15%;
+height: 35%;
+position: absolute;
+left: 25%;
+top: 30%;
+opacity: 90%;
+}
+
+.suggestionIcon4 {
+width: 15%;
+height: 35%;
+position: absolute;
+left: 40%;
+top: 60%;
+opacity: 90%;
+}
+
+
