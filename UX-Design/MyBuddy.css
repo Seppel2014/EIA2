@@ -2,7 +2,8 @@ html {
     background-color: white; /* forced dark mode deaktiviert weißen hintergrund, vor präsentation zu weiß ändern */
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-image: url(images/background.png);
+
 }
 
 #MyBuddyTest {
@@ -10,4 +11,17 @@ position: absolute;
 left: 10%;
 border: 1px;
 border: solid;
+}
+
+#containerLogin {
+position: absolute;
+top: 40%;
+left: 45%;
+width: 10%;
+height: 15%;
+border: 1px;
+border-radius: 25px;
+padding: 20px;
+background-color: white;
+opacity: 90%;
 }
