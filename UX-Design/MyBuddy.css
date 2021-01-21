@@ -25,3 +25,17 @@ padding: 20px;
 background-color: white;
 opacity: 90%;
 }
+
+#MyBuddyVerify {
+border: solid;
+position: absolute;
+left:10%;
+}
+
+#buttonForward {
+position: absolute;
+width: 50%;
+height: 22%;
+right: -41.5%;
+top: 35%;
+}
