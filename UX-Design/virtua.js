@@ -13,7 +13,7 @@ function checkLogin() {
     console.log("Password " + password);
     if (password != "" && username != "") {
         console.log("Login succesful");
-        window.open("myBuddyPage.html", "_self");
+        window.open("myBuddyVerify.html", "_self");
     }
 }
 //# sourceMappingURL=virtua.js.map
