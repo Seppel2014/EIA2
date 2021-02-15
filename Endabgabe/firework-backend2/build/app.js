@@ -11,7 +11,7 @@ class App {
         //local mongodb url
         this.localMongoUrl = 'mongodb://127.0.0.1:27017/firework';
         //remote mongodb url
-        this.remoteMongoUrl = "mongodb+srv://burak:burak@firework.fxgkf.mongodb.net/firework?retryWrites=true&w=majority";
+        this.remoteMongoUrl = "mongodb+srv://Simon:<password>@cluster0.h91f9.mongodb.net/<dbname>?retryWrites=true&w=majority";
         // create express app
         this.app = express();
         //load the confog
