@@ -1,17 +1,26 @@
-import mongoose from 'mongoose';
-const Schema = mongoose.Schema;
-export const RocketSchema = new Schema({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Rocket = void 0;
+const mongoose = require("mongoose");
+// mongoose easy creating of collections and documents for mongo db
+//rockets consists of name, color, secondcolor, speed, size
+const RocketSchema = new mongoose.Schema({
     name: {
-        type: String,
-        required: 'Enter a first name'
+        type: String
     },
     color: {
-        type: String,
-        required: 'Enter a color'
+        type: Number
     },
-    createdDate: {
-        type: Date,
-        default: Date.now
+    secondColor: {
+        type: Number
+    },
+    speed: {
+        type: Number
+    },
+    size: {
+        type: Number
     }
 });
+//create a mongoose => mongodb model with name rocket and the corresponding schema
+exports.Rocket = mongoose.model('Rocket', RocketSchema);
 //# sourceMappingURL=RocketModel.js.map
