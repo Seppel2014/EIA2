@@ -1,0 +1,25 @@
+h1 {
+    color: green;
+}
+
+canvas {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.cards {
+    border: solid 1px;
+    width: 30%;
+    padding: 2px;
+    margin: 2px;
+    height: 60%;
+}
+
+#sliderbox {
+    position: absolute;
+    top: 90%;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+}
