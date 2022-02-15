@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abschlussarbeit Simon Daiber Ws2021</title>
+    <link rel="stylesheet" href="Abschlussarbeit.css">
+    <script src="Vector.js"></script>
+    <script src="Random.js"></script>
+    <script src="Movable.js"></script>
+    <script src="Employee.js"></script>
+    <script src="Customer.js"></script>
+    <script src="Stock.js"></script>
+    <script src="Order.js"></script>
+    <script src="Background.js"></script>
+    <script src="Abschlussarbeit.js"></script>
+</head>
+
+<body>
+    
+    <div id="statistics_div">
+        <ul id="statistics_ul">
+            <li id="statistics_time"></li>
+            <li id="statistics_employee_happiness"></li>
+            <li id="statistics_employee"></li>
+            <li id="statistics_customer"></li>
+            <li id="statistics_customer_happiness"></li>
+            <li id="statistics_orders_done"></li>
+        </ul>
+    </div>
+
+    <div id="stock_div">
+        
+    </div>
+
+    <div id="orders_div">
+
+    </div>
+
+    <div id="inventory_employee">
+
+    </div>
+    
+    <canvas id="canvas1" width="1000" height="700" style="border: 1px solid black"></canvas>
+
+    <div id="stock_canvas">
+
+    </div>
+
+    <div id="settings">
+        <form>
+            <select id= "numberEmployee">
+                <option value="1">1 Mitarbeiter</option>
+                <option value="2">2 Mitarbeiter</option>
+                <option value="3">3 Mitarbeiter</option>
+            </select>
+            <select id= "customerPerMin">
+                <option value="1">1 Kunden p. Min.</option>
+                <option value="3">3 Kunden p. Min.</option>
+                <option value="6">6 Kunden p. Min.</option>
+            </select>
+            <select id= "inventorycapacity">
+                <option value="15">15 Slots</option>
+                <option value="20">20 Slots</option>
+            </select>
+            <button id="startbutton">Start</button>
+    </div>
+
+</body>
+</html>

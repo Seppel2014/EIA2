@@ -1,0 +1,103 @@
+#stock_div {
+    position: absolute;
+    margin: 5px;
+    top: 0px;
+    left: 1020px;
+    width: 400px;
+    height: 900px;
+    font-size: 10px;
+    border: solid black 1px;
+}
+
+#settings {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: beige;
+    font-size: 30px;
+}
+
+.ingredients_raw {
+    text-align: center;
+    position: relative;
+    width: 40%;
+    height: 10%;
+    background-color: green;
+    color: white;
+    margin: 1%;
+    font-size: 15px;
+}
+
+#statistics_div {
+    position: absolute;
+    width: 200;
+    height: 100px;
+    top: 570px;
+    
+}
+
+.buyingredientsbutton {
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    left: 5%;
+    top:75%;
+    font-size: 10px
+}
+
+.ingredients_storage_raw{
+    height: 50px;
+    width: 100px;
+}
+
+.ingredients_storage {
+    font-size: 10px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(100, 100, 98);
+
+}
+
+#stock_canvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 100px;
+}
+
+#orders_div {
+    position: absolute;
+    margin: 5px;
+    top: 710px;
+    width: 700px;
+    height: 190px;
+    border: solid black 1px;
+}
+
+#inventory_employee {
+    position: absolute;
+    margin: 5px;
+    left: 720px;
+    top: 710px;
+    width: 290px;
+    height: 190px;
+    border: solid black 1px;
+}
+
+.ticket {
+    position: "absolute";
+    
+    border: solid black 1px;
+    
+}
+
+canvas {
+    position: absolute;
+    margin: 5px;
+    top: 0px;
+}
